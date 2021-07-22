@@ -1,4 +1,5 @@
-Tasks
+Tasks 20 july
+
 1) List 5 difference between Browser JS(console) v Nodejs 
 
 
@@ -56,3 +57,94 @@ Tasks
         
         typeof(NaN)
       >   "number"
+
+...............................................................................................
+
+Task 21 July:
+
+1)
+    var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    use the above JSON to iterate over all for loops (for, for in, for of, forEach)
+
+    -->By For loop:
+   
+    var obj = [
+    { person: "Name 1", age: "2", company: "GUVI" },
+    { person: "Name 2", age: "5", company: "GUVI geek" },
+    { person: "Name 3", age: "8", company: "GUVI geek network" },
+  ]
+    for(var i=0;i<obj.length;i++)
+   {
+     console.log("Name :",obj[i].person,"Age :", obj[i].age,"Company :", obj[i].company);
+   }
+   
+   --------------------------------------------
+   -->For in
+
+    var obj = [
+    { person: "Name 1", age: "2", company: "GUVI" },
+    { person: "Name 2", age: "5", company: "GUVI geek" },
+    { person: "Name 3", age: "8", company: "GUVI geek network" },
+  ]
+    for(let keys in obj)
+    {
+      console.log(obj[keys]);
+    }
+  ----------------------------------------------
+
+   --> For of
+    var obj = [
+  { person: "Name 1", age: "2", company: "GUVI" },
+  { person: "Name 2", age: "5", company: "GUVI geek" },
+  { person: "Name 3", age: "8", company: "GUVI geek network" },
+]
+  
+
+for(var index of Object.keys(obj))
+{
+for(const key of Object.keys(obj[index]))
+  {
+    console.log(key," : ",obj[index][key]);
+  }
+}
+  ------------------------------------------------
+   --> for each
+
+   var obj = [
+  { person: "Name 1", age: "2", company: "GUVI" },
+  { person: "Name 2", age: "5", company: "GUVI geek" },
+  { person: "Name 3", age: "8", company: "GUVI geek network" },
+]
+  
+
+obj.forEach((element)=>
+  console.log(element)
+);
+
+
+
+
+
+
+
+
+
+
+
+    2)
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          console.log(data);
+        };
+        xhr.send();
+    use the restcountries API url ->  https://restcountries.eu/rest/v2/all
+    and display all the country flags in console
+    3) use the same restcountries and print all countries name, region, sub region and population.
+    4) read about the difference between window, screen and document in javascript
+
