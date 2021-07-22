@@ -1,0 +1,110 @@
+1 List 5 difference between Browser JS(console) v Nodejs
+
+-->
+
+Both the browser and Node use JavaScript as their programming language.
+Building apps that run in the browser is a completely different thing than building a Node.js application.
+As a frontend developer who extensively uses Javascript, Node apps brings with it, a huge advantage - the comfort of programming everything, the frontend and the backend, in a single language.
+
+--In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. Those do not exist in Node, of course. You don’t have the document, window and all the other objects that are provided by the browser.
+--And in the browser, we don’t have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
+--Another big difference is that in Node.js you control the environment.Compared to the browser environment, where you don’t get the luxury to choose what browser your visitors will use, this is very convenient.
+--Since JavaScript moves so fast, but browsers can be a bit slow and users a bit slow to upgrade, sometimes on the web, you are stuck to use older JavaScript / ECMAScript releases.
+--You can use Babel to transform your code to be ES5-compatible before shipping it to the browser, but in Node, you won’t need that.
+--Another difference is that Node uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2. To watch and Summerize : How does the browser actually render a website.
+
+-->
+
+--Phases: Parsing, Rendering, Layout, Paint
+
+## Parsing:
+
+--Parsing Flow:
+ 
+ Tokeniser --> Tree Construction --> DOM Tree --> Script execution --> Tokeniser 
+
+Parse Tree- Represention of Html
+DOM Tree - Contains all the DOM Element, Interact with javaScript
+
+performance Insight : </script> at bottom
+
+## Render/Frame Tree:
+  
+  DOM + CSSOM - Two object Model, Actual representation on window
+
+  --Render Tree:
+            Render object
+            Render styles
+            Render layers
+            Line boxes
+  Calculate visual Properties --- Compute all styles, Style Represention
+
+## Layout:
+    Recursive Process
+            Traverse Render Tree
+            Nodes position and Size 
+            layout its children
+
+## Paint
+     Takes layed out and render Tree
+     Creates layers
+     Increment Process
+
+     Painting computes bitmmaps and composite representation to screen
+
+    
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+3. To Read : Is it necessary to write Head Body & HTML tags.
+
+-->
+
+Omitting the html, head, and body tags is certainly allowed by the HTML specs. The underlying reason is that browsers have always sought to be consistent with existing web pages, and the very early versions of HTML didn't define those elements. 
+It's true that the HTML specs permit certain tags to be omitted in certain cases, but generally doing so is unwise.
+It has two effects - it makes the spec more complex, which in turn makes it harder for browser authors to write correct implementations.
+This makes the likelihood of browser errors in these parts of the spec high. As a website author you can avoid the issue by including these tags
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+4) Execute the bellow code and write your description in txt file
+        
+        typeof(1)
+      >  "number"
+        
+        typeof(1.1)
+      >  "number"
+        
+        typeof('1.1')
+      >  "string"
+      
+        typeof(true)
+      >  "boolean"
+      
+        typeof(null)
+      >  "object"
+      
+        typeof(undefined)
+      >  "undefined"
+        
+        typeof([])
+      >  "object"
+        
+        typeof({})
+      >   "object"
+        
+        typeof(NaN)
+      >   "number"
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+5 Read what is prototype
+
+-->
+Prototypes are the mechanism by which JavaScript objects inherit features from one another. 
+JavaScript is often described as a prototype-based language — to provide inheritance, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
+An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them.
+
+-----------------------------------------------------------------------------------------------------------------------------------
