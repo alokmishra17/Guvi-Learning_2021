@@ -114,6 +114,8 @@ for(const key of Object.keys(obj[index]))
   ------------------------------------------------
    --> for each
 
+   //Didn't work on object
+
    var obj = [
   { person: "Name 1", age: "2", company: "GUVI" },
   { person: "Name 2", age: "5", company: "GUVI geek" },
@@ -125,14 +127,7 @@ obj.forEach((element)=>
   console.log(element)
 );
 
-
-
-
-
-
-
-
-
+---------------------------------------------------------------------------------
 
 
     2)
@@ -145,6 +140,47 @@ obj.forEach((element)=>
         xhr.send();
     use the restcountries API url ->  https://restcountries.eu/rest/v2/all
     and display all the country flags in console
+
+
+    var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          fun1(data);
+        };
+        xhr.send();
+
+        function fun1(values)
+        {
+          for(let i=0;i<values.length;i++)
+          {
+            console.log(values[i].flag)
+          }
+        
+        -----------------------------------------------------------
+
     3) use the same restcountries and print all countries name, region, sub region and population.
+
+    var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+        xhr.onload = function () {
+          var data = JSON.parse(this.response);
+          fun1(data);
+        };
+        xhr.send();
+
+        function fun1(values)
+        {
+          for(let i=0;i<values.length;i++)
+          {
+            console.log("Country : ", values[0].name)
+            console.log("Region : ",values[0].region)
+            console.log("subregion :",values[0].subregion)
+            console.log("population : ",values[0].population)
+            console.log("......................")
+          }
+        }
+
+        --------------------------------------------------------------------------
     4) read about the difference between window, screen and document in javascript
 
