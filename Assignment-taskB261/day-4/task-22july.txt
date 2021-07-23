@@ -1,0 +1,29 @@
+1) create your own resume data in JSON format
+ 
+--> Refer script1.js
+
+-------------------------------------------------------------------------------------------------------
+
+2) how to compare two JSON have the same properties without order?
+        var obj1 = { name: "Person 1", age:5 };
+        var obj2 = { age:5, name: "Person 1" };
+    
+-->Refer script2.js
+
+console.log(JSON.stringify(obj1)===JSON.stringify(obj2));
+--when we try JSON.stringify it return false
+
+So, for comparing JSON have the same prperties without order ---Lodash _.isEqual allows you to do that
+
+console.log(_.isEqual(obj1, obj2));
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+
+documentation: https://lodash.com/docs/#isEqual
+
+------------------------------------------------------------------------------------------------------------------
+
+3) https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
+
+-->practice tasks problems (to be continued)
+
+---------------------------------------------------------------------------------
