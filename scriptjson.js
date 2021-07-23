@@ -1,50 +1,55 @@
 
  let myCar={
-    Dimension:{
-        "overall length": 3.500,
-        "overall width" : 1.600,
-        "overall height": 1.490,
-        "wheelbase": 2.360,
-        "track width":{
+    dimension:{
+        overall_length: 3.500,
+        overall_width : 1.600,
+        overall_height: 1.490,
+        wheelbase: 2.360,
+        track_width:{
             front: 1.405,
             rear: 1.400
         },
-        "minimum turning radius": 1.70
+        minimum_urning_radius: 1.70
        },
-       Capacities:{
-           "seating capacity": 5,
-           "fuel tank capacity": 35,
+       capacities:{
+           seating_capacity: 5,
+           fuel_tank_capacity: 35,
        },
-       Engine:{
-           "type": "KB-Series",
-           "number of culinders": 3,
-           "number of valves": 12,
-           "capacity": 998,
-           "bore*stroke":"73.0*79.5",
-           "compression ratio": 10.1,
-           "maximum power": "67/6.200",
-           "maximum torque": "90/3/500",
-           "fuel distribution": "multipoint injection"
+       engine:{
+           type: "KB-Series",
+           number_of_culinders: 3,
+           number_of_valves: 12,
+           capacity: 998,
+           bore_stroke:{
+               bore:73.0,
+               stroke:79.5,
+            },
+           compression_ratio: 10.1,
+           maximum_power: [67,6.200],
+           maximum_torque: [90,3,500],
+           fuel_distribution: "multipoint injection"
        },
-       Transmission:{
+       transmission:{
            type: "5-speed MT"
        },
        Chassis:{
-           "steering": "Rack pinion, Power assisted",
-           "brakes":{
+           steering: "Rack pinion, Power assisted",
+           brakes:{
                front: "ventilated discs",
                rear: "drums"
            },
-           "suspension":{
+           suspension:{
                front: "MacPherson strut & coil spring",
                rear: "Isolated trailing link & coil spring"
            },
-           "shock absorbers": "Gas filled",
-           "tyre(tubeless": "155/80R13"
+           shock_absorbers: "Gas filled",
+           tyre:{
+               tubeless:[155,"80R13"]
+           } 
        },
        Weights:{
-           "kerb weight": "860-880",
-           "gross vechile weight": 1.320
+           kerb_weight: "860-880",
+           gross_vechile_weight: 1.320
        }
 
     }
