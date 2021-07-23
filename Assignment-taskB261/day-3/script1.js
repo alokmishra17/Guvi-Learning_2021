@@ -12,3 +12,4 @@ var xhr = new XMLHttpRequest();
           {
             console.log(values[i].flag)
           }
+        }
