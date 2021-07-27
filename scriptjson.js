@@ -45,7 +45,7 @@
            shock_absorbers: "Gas filled",
            tyre:{
                tubeless:[155,"80R13"]
-           } 
+           }, 
        },
        Weights:{
            kerb_weight: "860-880",
