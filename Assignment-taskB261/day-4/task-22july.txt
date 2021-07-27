@@ -24,6 +24,6 @@ documentation: https://lodash.com/docs/#isEqual
 
 3) https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
 
--->practice tasks problems (to be continued)
+-->practice tasks problems
 
 ---------------------------------------------------------------------------------
