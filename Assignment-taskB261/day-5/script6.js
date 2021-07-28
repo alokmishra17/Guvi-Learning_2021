@@ -17,7 +17,7 @@ var sortData= function(arr)
             }
         }
     }
-    return(newArr);
+    return(arr);
 }
 var getMedian = function(arr)
 {
