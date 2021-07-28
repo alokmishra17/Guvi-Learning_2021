@@ -1,1 +1,62 @@
 
+--> Do the below programs in anonymous function & IIFE:
+-------------------------------------------------------------------------------------
+a. Print odd numbers in an array
+
+--> script1.js
+--------------------------------
+
+b. Convert all the strings to title caps in a string array
+
+--> script2.js
+-------------------------------
+
+c. Sum of all numbers in an array
+
+--> script3.js
+--------------------------------
+
+d. Return all the prime numbers in an array
+
+--> script4.js
+--------------------------------
+
+e. Return all the palindromes in an array
+
+--> script5.js
+-----------------------------------
+
+f. Return median of two sorted arrays of same size
+
+--> script6.js
+---------------------------------
+
+g. Remove duplicates from an array.
+
+-->script7.js
+------------------------------------
+
+h. Rotate an array by k times
+
+-->script8.js 
+---------------------------------
+
+---------------------------------------------------------------------------------------
+
+2. https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
+
+--Practice
+
+-------------------------------------------------------------------------------
+
+3. Do the below programs in arrow functions:
+
+a. Print odd numbers in an array
+
+b. Convert all the strings to title caps in a string array
+
+c. Sum of all numbers in an array
+
+d. Return all the prime numbers in an array
+
+e. Return all the palindromes in an array
