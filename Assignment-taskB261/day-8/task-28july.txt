@@ -1,0 +1,21 @@
+1. https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+--> script1.js
+------------------------------
+
+2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+--> script2.js
+------------------------------
+
+3. Write a “person” class to hold all the details.
+
+--> script4.js
+-----------------------------
+
+4. write a class to calculate uber price.
+
+--> script4.js
+
+
+------------------------------------------------------------------------------------------------------
