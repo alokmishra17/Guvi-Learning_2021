@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #first{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: red;
+            width:500px;
+            color: white;
+            font-size:110%;
+        }
+        #top{
+            border-style: solid;
+            border-width: medium;
+            width:510px;
+            margin-left: 60px;
+            margin-top: 20px;
+            padding-top: -10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id=top>
+        <form action="#" method="GET">
+            <p id="first">Yes! I want to subscribe to <i>Mag-O-Zine</i></p>
+            <p>
+            <label for="first_name">First Name:</label>
+            <input type="text" size=16 name="first_name" placeholder="First Name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" size=20 name="last_name" placeholder="Last Name"><br>
+            </p>
+            <p>
+            <label for="address">Address:</label>
+            <input type="text" size=52 name="address" placeholder="Your Address"><br>
+            </p>
+            <p>
+            <label for="city">City:</label>
+            <input type="text" size=15 name="city" placeholder="City">
+            <label for="state">State:</label>
+            <input type="text" size=14 name="state" placeholder="State">
+            <label for="zip">Zip:</label>
+            <input type="text" size=10 name="zip" placeholder="Zip">
+            </p>
+            <p style="font-weight: bold;">Subscribe For:
+                <input type="radio" name=years value="1">1 year ($19.95)
+                <input type="radio" name=years value="2" checked="checked">2 year ($35.00)  
+            </p>
+            <p style="font-weight: bold;">
+                Send me more information about:<br>
+                <input type="checkbox" name="check1" value="Computer-Zine" checked="checked">Computer-Zine<br>
+                <input type="checkbox" name="check2" value="fisher-zine">Fisher-Zine<br>
+                <input type="checkbox" name="check3" value="Cat-O-Zine" checked="checked">Cat-O-Zine<br>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
