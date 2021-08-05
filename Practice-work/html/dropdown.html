@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>  
+
+<style>
+    #btn1{
+        background-color: lime;
+        color:black;
+        cursor:pointer;
+        border-radius:20%;
+        padding:20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #dropdown_menu:hover #btn1{
+        background-color: black;
+        color: wheat;
+    }
+    #dropdown_menu{
+        position:relative;
+        display:inline-block;
+    }
+    #menu_item{
+        display: none;
+        position: absolute;
+        background-color: wheat;
+        width:160px;
+    }
+    #menu_item a{
+        color:black;
+        padding:12px 16px;
+        text-decoration: none;
+        display:block;
+        font-weight: bold;
+        text-align:center;
+    }
+    #menu_item a:hover{
+        background-color: yellow;
+    }
+    #dropdown_menu:hover #menu_item{
+        display: block;
+    }
+</style>
+
+
+</head>
+<body>
+    <div id="dropdown_menu">
+        <button id="btn1">List Of Product</button>
+        <div id="menu_item">
+            <a href="#">Pizza</a>
+            <a href="#">Burger</a>
+            <a href="#">Samosa</a>
+            <a href="#">Pastry</a>
+            <a href="#">Patties</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
